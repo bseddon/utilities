@@ -1,0 +1,30 @@
+{
+    "name": "lyquidity/utilities",
+    "description": "Utility classes to provide a tuple dictionary and to convert a simple XML class to an array",
+    "keywords": ["lyquidity", "tuple", "simplexml"],
+    "type": "library",
+    "homepage": "https://github.com/bseddon/utilities",
+    "license": "GPL version 3.0",
+    "authors": [
+        {
+            "name": "Bill Seddon",
+            "homepage": "https://github.com/orgs/lyquidity/people/bseddon"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+		"ext-hash" : "*",
+		"ext-json" : "*",
+		"ext-libxml" : "*",
+		"ext-SimpleXML" : "*",
+		"ext-xml" : "*",
+		"lib-libxml" : "*",
+		"lyquidity/xml" : "dev-master"
+    },
+	"autoload": {
+        "files": [ 
+			"./tuple-dictionary.php",
+			"./SimpleXMLElementToArray.php"
+		]
+    }
+}
