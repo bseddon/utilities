@@ -1,4 +1,4 @@
-# XBRLQuery/core
+# Array and XML utilities for PHP
 
 **Table of contents**
 * [About the project](#about-the-project)
@@ -23,6 +23,10 @@ It also sometimes necessary, for example when examining segment or scenarios wit
 be able to compare for equality the elements defined under segments or scenarios of a pair of contexts.  The 
 SimpleXMLElementToArray class makes it simple to convert the elements defined under a segment or scenario element node
 to an array so they can be compared following the various rules defined by the XBRL 2.1 specification.  
+
+### Dependencies
+
+This project depends on [pear/log](https://github.com/pear/Log) and [lyquidity/xml](https://github.com/bseddon/xml)
 
 ## License
 
@@ -56,4 +60,12 @@ Or fork or download the repository.  The source can be found in the 'source' sub
 ## Getting started
 
 The test.php file includes illustrations of using the classes.
+
+Assuming you have installed the library using composer then this PHP application will run the test:
+
+```php
+&lt;?php
+require_once __DIR__ . '/vendor/autoload.php';
+include __DIR__ . "/vendor/lyquidity/utilities/test.php";
+```
 
