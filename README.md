@@ -53,7 +53,13 @@ liabilities.  You are also urged to review our [code of conduct](CODE_OF_CONDUCT
 
 ## Install
 
-The project includes a composer.json that can be used by [composer](https://getcomposer.org/) to install the library.
+The project can be installed by [composer](https://getcomposer.org/).   Assuming Composer is installed and a shortcut to the program is called 'composer'
+then the command to install this project is:
+
+```
+composer require lyquidity/utilities:dev-master lyquidity/xml:dev-master --prefer-dist
+```
+
 
 Or fork or download the repository.  The source can be found in the 'source' sub-folder.
 
