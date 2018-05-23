@@ -4,7 +4,7 @@
  * Implements the class TupleDictionary.
  *
  * @author Bill Seddon
- * @version 0.1.1
+ * @version 0.9
  * @copyright Lyquidity Solutions Limited 2016
  * @license Apache 2
  *

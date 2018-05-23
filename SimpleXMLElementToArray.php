@@ -3,7 +3,7 @@
 /**
  * SimpleXMLToArray
  * @author Bill Seddon
- * @version 0.1.1
+ * @version 0.9
  * @copyright Lyquidity Solutions Limited 2017
  * @license GPL 3
  *
@@ -91,6 +91,7 @@ class SimpleXMLElementToArray
 	 * @param SimpleXMLElement $node The XML node to be converted
 	 * @param array $namespace The namespace of the current node
 	 * @param bool $supportRepeatingElements (default = true)
+	 * @param int $sequenceNumber
 	 * @return array
 	 */
 	private function convert( $node, $namespace, $supportRepeatingElements = true, $sequenceNumber = 0 )
