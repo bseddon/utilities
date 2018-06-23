@@ -24,6 +24,11 @@ be able to compare for equality the elements defined under segments or scenarios
 SimpleXMLElementToArray class makes it simple to convert the elements defined under a segment or scenario element node
 to an array so they can be compared following the various rules defined by the XBRL 2.1 specification.  
 
+It is common to need to create a temporary file to hold zip contents and then tidy up after.  The MemoryWrapper is a StreamWrapper
+implementation that provides a named in-memory pseudo file that can be uses to store content.  The 'filename' can then be passed
+to another function such as file_get_contents() so the contents can be accessed.  The pseudo file will be lost when the script
+terminates so there is no need to explcitly delete the file.  However the file can be explicitly deleted to recover memory. 
+
 ### Dependencies
 
 This project depends on [pear/log](https://github.com/pear/Log) and [lyquidity/xml](https://github.com/bseddon/xml)
