@@ -5,8 +5,8 @@
  *
  * @author Bill Seddon
  * @version 0.9
- * @copyright Lyquidity Solutions Limited 2016
- * @license Apache 2
+ * @copyright Lyquidity Solutions Limited 2018
+ * @license GPL 3.0
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
