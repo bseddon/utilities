@@ -188,5 +188,33 @@ class TupleDictionary
 		return true;
 	}
 
+	/**
+	 * Create an instance from a persisted store
+	 * @param string $json
+	 * @throws \Exception
+	 * @return TupleDictionary
+	 */
+	public static function fromJSON( $json )
+	{
+		$array = json_decode( $json, true );
+		if ( ! isset( $array['hash_algorithm'] ) || ! isset( $array['data'] ) )
+		{
+			throw new \Exception("Invalid JSON");
+		}
+
+		$dict = new TupleDictionary( $array['hash_algorithm'] );
+		$dict->data = $array['data'];
+
+		return $dict;
+	}
+
+	/**
+	 * Serialize the object as JSON
+	 * @return string
+	 */
+	public function toJSON()
+	{
+		return json_encode( array( 'hash_algorithm' => $this->hash_algorithm, 'data' => $this->data ) );
+	}
 }
 
