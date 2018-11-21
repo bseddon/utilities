@@ -164,7 +164,8 @@ class TupleDictionary
 	public function getKeys()
 	{
 		return isset( $this->data['keys'] )
-			? array_values( $this->data['keys'] )
+			// ? array_values( $this->data['keys'] )
+			? $this->data['keys']
 			: array();
 	}
 
