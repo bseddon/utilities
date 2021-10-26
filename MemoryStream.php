@@ -301,7 +301,7 @@ class MemoryStream
 
 	/**
 	 * Closes the stream and removes content
-	 * @param unknown $data
+	 * @param string $data
 	 */
 	public function unlink( $data )
 	{
